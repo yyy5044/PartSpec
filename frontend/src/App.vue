@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView, useRoute } from 'vue-router'
+import HeaderEasterEgg from './components/HeaderEasterEgg.vue'
 import MascotCat from './components/MascotCat.vue'
 
 const route = useRoute()
@@ -8,9 +9,8 @@ const route = useRoute()
 <template>
   <div class="container">
     <header class="site-header">
-      <span class="region-label">header</span>
       <MascotCat />
-      <h1>PartSpec</h1>
+      <HeaderEasterEgg />
     </header>
 
     <nav class="top-nav">

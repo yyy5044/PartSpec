@@ -36,8 +36,9 @@ a:hover {
   font-size: 11px;
 }
 
-/* 헤더: 컨테이너 맨 위 밴드, 가운데 정렬 */
+/* 헤더: 컨테이너 맨 위 밴드, 가운데 정렬. 이스터에그 초상화의 기준 좌표 */
 .site-header {
+  position: relative;
   text-align: center;
   padding: 20px 0 16px;
 }
