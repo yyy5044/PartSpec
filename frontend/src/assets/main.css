@@ -1,0 +1,107 @@
+/* 스켈레톤 단계: 구조 확인용 최소 스타일.
+   점선 테두리와 .region-label은 실제 디자인 입힐 때 걷어낸다. */
+
+/* Neo둥근모 — 둥근모꼴의 현행 유지보수판, SIL OFL 1.1 */
+@import url('https://cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@latest/neodgm/style.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #4d657a;
+  font-family: Verdana, 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #1f5b99;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 구조 표시용 라벨 */
+.region-label {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px dashed #9aa7b1;
+  background: #f7f9fa;
+  color: #7d8b96;
+  font-size: 11px;
+}
+
+/* 헤더: 컨테이너 맨 위 밴드, 가운데 정렬 */
+.site-header {
+  text-align: center;
+  padding: 20px 0 16px;
+}
+
+.site-header h1 {
+  margin: -14px 0 0;
+  font-family: 'NeoDunggeunmo', Verdana, sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #1c2e3a;
+}
+
+/* 본문 컨테이너 */
+.container {
+  width: min(94%, 1400px);
+  margin: 24px auto;
+  background: #fff;
+  border: 1px solid #5c7a90;
+}
+
+/* 메뉴 띠: 흰 헤더와 흰 본문 사이 구분 밴드 */
+.top-nav {
+  display: flex;
+  background: #7d8d99;
+}
+
+.top-nav a {
+  padding: 8px 20px;
+  color: #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.top-nav a:hover {
+  background: #6b7b87;
+  text-decoration: none;
+}
+
+.top-nav a.router-link-exact-active {
+  background: #5e6e7a;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  align-items: stretch;
+  min-height: 420px;
+}
+
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  padding: 14px;
+  border-right: 1px dashed #b9c4cc;
+  background: #f4f6f8;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+}
+
+.site-footer {
+  padding: 12px 14px;
+  border-top: 1px solid #ccc;
+}
